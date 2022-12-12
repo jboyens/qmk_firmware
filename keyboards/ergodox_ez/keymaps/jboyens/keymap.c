@@ -55,20 +55,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            KC_EQUAL,      KC_1,     KC_2,    KC_3,      KC_4,                   KC_5, KC_LEFT,      KC_RIGHT , KC_6             , KC_7    , KC_8   , KC_9       , KC_0       , KC_MINUS,
        LT(1,KC_TAB),  KC_QUOTE, KC_COMMA,  KC_DOT,      KC_P,                   KC_Y,   TG(1),      TG(2)    , KC_F             , KC_G    , KC_C   , KC_R       , KC_L       , KC_SLASH,
              KC_ESC,      KC_A,     KC_O,    KC_E,      KC_U,                   KC_I,                          KC_D             , KC_H    , KC_T   , KC_N       , KC_S       , KC_ENTER,
-            KC_LSPO, KC_SCOLON,     KC_Q,    KC_J,      KC_K,                   KC_X, KC_HYPR,      KC_MEH   , KC_B             , KC_M    , KC_W   , KC_V       , KC_Z       , KC_RSPC ,
-     LT(1,KC_GRAVE),  KC_QUOTE,  KC_LALT, KC_LEFT,  KC_RIGHT,                                                                     KC_UP   , KC_DOWN, KC_LBRACKET, KC_RBRACKET, MO(1)   ,
+            KC_LSPO,   KC_SCLN,     KC_Q,    KC_J,      KC_K,                   KC_X, KC_HYPR,      KC_MEH   , KC_B             , KC_M    , KC_W   , KC_V       , KC_Z       , KC_RSPC ,
+     LT(1,KC_GRAVE),  KC_QUOTE,  KC_LALT, KC_LEFT,  KC_RIGHT,                                                                     KC_UP   , KC_DOWN, KC_LBRC    , KC_RBRC    , MO(1)   ,
 
                                                               LALT_T(KC_APPLICATION), KC_HOME,      KC_PGUP  , KC_ESCAPE,
-                                                                                       KC_END,      KC_PGDOWN,
-                                                   KC_BSPACE,                KC_LCTL, KC_LGUI,      MO(1)    , KC_LALT          , KC_SPACE
+                                                                                       KC_END,      KC_PGDN,
+                                                     KC_BSPC,                KC_LCTL, KC_LGUI,      MO(1)    , KC_LALT          , KC_SPACE
 ),
 
 [1] = LAYOUT_ergodox_pretty(
 KC_ESCAPE,   KC_F1,   KC_F2,       KC_F3,       KC_F4,    KC_F5, _______,      _______, KC_F6  , KC_F7  , KC_F8 , KC_F9, KC_F10   , KC_F11   ,
-  _______, KC_EXLM,   KC_AT,     KC_LCBR,     KC_RCBR,  KC_PIPE, _______,      TG(3)  , KC_UP  , KC_7   , KC_8  , KC_9 , KC_ASTR  , KC_BSLASH,
+  _______, KC_EXLM,   KC_AT,     KC_LCBR,     KC_RCBR,  KC_PIPE, _______,      TG(3)  , KC_UP  , KC_7   , KC_8  , KC_9 , KC_ASTR  , KC_BSLS,
   _______, KC_HASH,  KC_DLR,     KC_LPRN,     KC_RPRN, KC_GRAVE,                        KC_DOWN, KC_4   , KC_5  , KC_6 , _______  , _______  ,
-  _______, KC_PERC, KC_CIRC, KC_LBRACKET, KC_RBRACKET,  KC_TILD, _______,      _______, KC_AMPR, KC_1   , KC_2  , KC_3 , KC_BSLASH, _______  ,
-    RESET, _______, _______,     _______,     _______,                                           _______, KC_DOT, KC_0 , KC_EQUAL , _______  ,
+  _______, KC_PERC, KC_CIRC,     KC_LBRC,     KC_RBRC,  KC_TILD, _______,      _______, KC_AMPR, KC_1   , KC_2  , KC_3 , KC_BSLS  , _______  ,
+  QK_BOOT, _______, _______,     _______,     _______,                                           _______, KC_DOT, KC_0 , KC_EQUAL , _______  ,
 
                                                         _______, _______,      _______, _______,
                                                                  _______,      _______,
@@ -91,12 +91,12 @@ _______, _______,    KC_MUTE,   KC_VOLD,  KC_VOLU,                              
              KC_EQL,        KC_1,          KC_2,    KC_3,      KC_4,          KC_5, KC_LEFT,      KC_RGHT, KC_6         , KC_7    , KC_8   , KC_9   , KC_0   , KC_MINS  ,
              KC_TAB,        KC_Q,          KC_W,    KC_E,      KC_R,          KC_T,   TO(0),      TO(0)  , KC_Y         , KC_U    , KC_I   , KC_O   , KC_P   , KC_SLASH ,
              KC_ESC,        KC_A,          KC_S,    KC_D,      KC_F,          KC_G,                        KC_H         , KC_J    , KC_K   , KC_L   , KC_SCLN, KC_ENTER ,
-          KC_LSHIFT, CTL_T(KC_Z),          KC_X,    KC_C,      KC_V,          KC_B, KC_HYPR,      KC_MEH , KC_N         , KC_M    , KC_COMM, KC_DOT , KC_SLSH, KC_RSHIFT,
+            KC_LSFT, CTL_T(KC_Z),          KC_X,    KC_C,      KC_V,          KC_B, KC_HYPR,      KC_MEH , KC_N         , KC_M    , KC_COMM, KC_DOT , KC_SLSH, KC_RSFT  ,
     LT(SYMB,KC_GRV),     KC_QUOT, LALT(KC_LSFT), KC_LEFT,   KC_RGHT,                                                      KC_UP   , KC_DOWN, KC_LBRC, KC_RBRC, MO(SYMB) ,
 
                                                                      ALT_T(KC_APP), KC_HOME,      KC_PGUP, CTL_T(KC_ESC),
                                                                                      KC_END,      KC_PGDN,
-                                                          KC_BSPACE, LCTL_T(KC_NO), KC_LGUI,      MO(1)  , KC_LALT      , KC_SPACE
+                                                          KC_BSPC, LCTL_T(KC_NO), KC_LGUI,      MO(1)  , KC_LALT      , KC_SPACE
 )
 };
 
